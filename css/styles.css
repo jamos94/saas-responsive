@@ -122,9 +122,27 @@ div.container.intro {
 }
 
 .hero-boxes > .box {
-  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: first baseline;
+  text-align: left;
+  gap: 1em;
   width: 25%;
-  height: 20rem;
+  height: fit-content;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+}
+
+h3 button {
+  background-color: #00C8A7;
+  font-size: large;
+  font-weight: light;
+  border: none;
+  padding: 8px;
+  margin-left: 1em;
+  border-radius: 0.5em;
+  color: var(--white);
   box-shadow: var(--shadow);
 }
 
@@ -150,4 +168,9 @@ img.logo {
 .logo-icon.paypal img,
 .calender img {
   max-width: 4.5em;
+}
+
+.box img {
+  max-width: 5em;
+  max-height: 5em;
 }
