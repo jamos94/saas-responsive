@@ -1,40 +1,3 @@
-.container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8rem;
-}
-
-.navbar-toggler {
-  display: none;
-}
-
-img.logo {
-  max-width: 10rem;
-  margin-right: auto;
-}
-
-li.nav-link a {
-  color: var(--font-color-base);
-  font-size: large;
-}
-
-button.button-blue {
-  background-color: var(--font-color-link);
-  border: 1px solid var(--font-color-link);
-  border-radius: 20px;
-  padding: 1rem;
-  font-size: large;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin-left: auto;
-  padding-top: 1em;
-}
-
 header {
   overflow: hidden;
   position: relative;
@@ -55,16 +18,136 @@ header::after {
   z-index: -1;
 }
 
+.navbar-toggler {
+  display: none;
+}
+
+li.nav-link a {
+  color: var(--font-color-base);
+  font-size: large;
+}
+
+button.button-blue {
+  background-color: var(--font-color-link);
+  border: 1px solid var(--font-color-link);
+  color: var(--white);
+  border-radius: 30px;
+  padding: 1rem;
+  font-size: larger;
+  box-shadow: var(--shadow);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+  padding-top: 1em;
+}
+
 .more-details > .button-blue {
   margin-right: 1em;
 }
 
-div.container.header {
+.header-banner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+div.container.intro {
   flex-direction: column;
   align-items: flex-start;
   gap: 1em;
+  width: 50%;
 }
 
-.header > .opening {
+.intro > .opening {
   max-width: 23em;
+}
+
+.floaters {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+  width: 50%;
+}
+
+.floaters > .row {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.logo-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6em;
+  height: 6em;
+  background-color: white;
+  border-radius: 5em;
+  box-shadow: var(--shadow);
+}
+
+.logo-icon.small {
+  max-width: 3.5em;
+  max-height: 3.5em;
+}
+
+.logo-icon.paypal,
+.logo-icon.calender {
+  max-width: 7em;
+  max-height: 7em;
+}
+
+.hero {
+  margin-top: 6rem;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-intro {
+  margin-bottom: 5em;
+}
+
+.hero-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-boxes > .box {
+  border: solid 1px black;
+  width: 25%;
+  height: 20rem;
+  box-shadow: var(--shadow);
+}
+
+img.logo {
+  max-width: 10rem;
+  margin-right: auto;
+}
+
+.logo-icon img {
+  max-width: 4.2em;
+}
+
+.details img {
+  max-width: 2em;
+  background-color: var(--white);
+  border-radius: 1em;
+}
+
+.logo-icon.small img {
+  max-width: 2.5em;
+}
+
+.logo-icon.paypal img,
+.calender img {
+  max-width: 4.5em;
 }
