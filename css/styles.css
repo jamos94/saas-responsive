@@ -58,7 +58,8 @@ button.button-blue {
 
 div.container.intro {
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-around;
+  /* align-items: flex-start; */
   gap: 1em;
   width: 50%;
 }
@@ -132,6 +133,11 @@ div.container.intro {
   height: fit-content;
   box-shadow: var(--shadow);
   padding: 2rem;
+}
+
+.container.showcase {
+  background-color: #F2F6FF;
+  padding: 10em;
 }
 
 h3 button {
