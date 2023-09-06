@@ -12,7 +12,7 @@ header::after {
   left: 0;
   height: 100%;
   width: 100%;
-  transform: skewY(-13deg);
+  transform: skewY(-17deg);
   background-image: linear-gradient(#FFF, #F5f5f5);
   transform-origin: bottom left;
   z-index: -1;
@@ -25,16 +25,6 @@ header::after {
 li.nav-link a {
   color: var(--font-color-base);
   font-size: large;
-}
-
-button.button-blue {
-  background-color: var(--font-color-link);
-  border: 1px solid var(--font-color-link);
-  color: var(--white);
-  border-radius: 30px;
-  padding: 1rem;
-  font-size: larger;
-  box-shadow: var(--shadow);
 }
 
 .navbar-nav {
@@ -56,7 +46,7 @@ button.button-blue {
   width: 100%;
 }
 
-div.container.intro {
+.container.intro {
   flex-direction: column;
   justify-content: space-around;
   /* align-items: flex-start; */
@@ -136,8 +126,123 @@ div.container.intro {
 }
 
 .container.showcase {
-  background-color: #F2F6FF;
-  padding: 10em;
+  background-color: var(--background-secondary);
+  padding-top: 10em;
+}
+
+.showcase img {
+  width: 90rem;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  text-align: center;
+  width: 100%;
+}
+
+.features-title {
+  text-align: center;
+  width: 80%;
+  }
+
+.connector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  font-size: medium;
+}
+
+.connector img {
+  max-width: 5em;
+  background-color: var(--background-secondary);
+  border-radius: 2.5em;
+}
+
+.circle {
+  text-align: center;
+}
+
+.line {
+  width: 8em;
+  border-bottom: 2px solid gray;
+  margin-bottom: 3em;
+}
+
+.testimony {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 4em;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.testimony .dots { /* Add some space between the images */
+  margin-top: 13em;
+  position: absolute;
+  width: 20%;
+  z-index: -1;
+}
+
+.testimony .profile-image {
+  margin-left: 3em;
+  width: 90%;
+  z-index: 1;
+}
+
+.description {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 50%;
+  font-size: medium;
+  color: var(--font-color-dark);
+}
+
+.description-logo {
+  width: 50%;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.details {
+  margin-bottom: 3rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: auto;
+}
+
+.title h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.title h4 {
+  margin: 0;
+  padding: 0;
+  color: var(--font-color-base);
+}
+
+
+button.button-blue {
+  background-color: var(--font-color-link);
+  border: 1px solid var(--font-color-link);
+  color: var(--white);
+  border-radius: 30px;
+  padding: 1rem;
+  font-size: larger;
+  box-shadow: var(--shadow);
 }
 
 h3 button {
@@ -180,3 +285,4 @@ img.logo {
   max-width: 5em;
   max-height: 5em;
 }
+
