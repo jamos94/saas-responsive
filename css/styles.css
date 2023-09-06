@@ -184,7 +184,7 @@ li.nav-link a {
   
 }
 
-.testimony .dots { /* Add some space between the images */
+.testimony .dots { 
   margin-top: 13em;
   position: absolute;
   width: 20%;
@@ -221,6 +221,28 @@ li.nav-link a {
   flex-direction: column;
   justify-content: flex-start;
   margin-right: auto;
+}
+
+.companies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  margin-top: 7em;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  width: 100%;
+}
+
+.logos > div {
+  max-width: 15%;
 }
 
 .title h3 {
