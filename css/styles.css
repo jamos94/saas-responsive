@@ -28,9 +28,6 @@ li.nav-link a {
 }
 
 .navbar-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 1rem;
   margin-left: auto;
   padding-top: 1em;
@@ -44,12 +41,13 @@ li.nav-link a {
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin: 1em;
 }
 
-.container.intro {
+.container.header {
   flex-direction: column;
   justify-content: space-around;
-  /* align-items: flex-start; */
+  align-items: flex-start;
   gap: 1em;
   width: 50%;
 }
@@ -59,7 +57,6 @@ li.nav-link a {
 }
 
 .floaters {
-  display: flex;
   flex-direction: row;
   gap: 8rem;
   width: 50%;
@@ -72,9 +69,6 @@ li.nav-link a {
 }
 
 .logo-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 6em;
   height: 6em;
   background-color: white;
@@ -89,8 +83,8 @@ li.nav-link a {
 
 .logo-icon.paypal,
 .logo-icon.calender {
-  max-width: 7em;
-  max-height: 7em;
+  max-width: 8em;
+  max-height: 8em;
 }
 
 .hero {
@@ -104,9 +98,6 @@ li.nav-link a {
 }
 
 .hero-boxes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 2em;
   width: 100%;
   height: 100%;
@@ -119,10 +110,10 @@ li.nav-link a {
   align-items: first baseline;
   text-align: left;
   gap: 1em;
-  width: 25%;
+  width: 30%;
   height: fit-content;
   box-shadow: var(--shadow);
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .container.showcase {
@@ -135,9 +126,6 @@ li.nav-link a {
 }
 
 .features {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 6rem;
   text-align: center;
   width: 100%;
@@ -149,9 +137,6 @@ li.nav-link a {
   }
 
 .connector {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 0.5em;
   font-size: medium;
 }
@@ -173,19 +158,14 @@ li.nav-link a {
 }
 
 .testimony {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   gap: 2em;
   margin-bottom: 4em;
   width: 100%;
   height: 100%;
-  
 }
 
 .testimony .dots { 
-  margin-top: 13em;
+  margin-top: 10em;
   position: absolute;
   width: 20%;
   z-index: -1;
@@ -197,10 +177,11 @@ li.nav-link a {
   z-index: 1;
 }
 
-.description {
+.testimony .description {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  text-align: left;
   max-width: 50%;
   font-size: medium;
   color: var(--font-color-dark);
@@ -212,11 +193,11 @@ li.nav-link a {
   margin-bottom: 2rem;
 }
 
-.details {
+.testimony .details {
   margin-bottom: 3rem;
 }
 
-.title {
+.testimony .title {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -224,19 +205,12 @@ li.nav-link a {
 }
 
 .companies {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-size: large;
-  margin-top: 7em;
+  margin-top: 10rem;
 }
 
 .logos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   gap: 4em;
   width: 100%;
 }
@@ -245,29 +219,291 @@ li.nav-link a {
   max-width: 15%;
 }
 
-.title h3 {
+.pricing {
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  gap: 3em;
+}
+
+.pricing-title {
+  text-align: center;
+}
+
+.pricing-boxes {
+  gap: 3em;
+}
+
+.monthly-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 50%;
+  height: 100%;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.484em;
+}
+
+.price {
+  font-size: 70px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.price .description {
+  width: 100%;
+  margin-bottom: 4em;
+}
+
+.price .description > span {
+  width: 100%;
+  font-size: medium;
+}
+
+.mini-tag {
+  font-size: x-small;
+  margin-top: 1em;
+}
+
+.align {
+  flex-direction: column;
+  gap: 1em;
+  width: 35%;
+}
+
+.align > .box {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.hire-us {
+  gap: 4em;
+  color: var(--white);
+  font-size: medium;
+  background-color: var(--contact);
+  color: var(--white);
+}
+
+.reviewer-title, .hire-us > .mini-tag {
+  color: var(--font-color-base);
+}
+
+.hire-intro {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  gap: 2em;
+  width: 30%;
+  margin-left: 2em;
+}
+
+.hire-us .mini-tag {
+  color: var(--font-color-base);
+  font-size: large;
+}
+
+.quote {
+  margin-bottom: 3em;
+}
+
+
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.head-shot {
+  border-radius: 3rem;
+  max-width: 4rem;
+}
+
+.contact-form {
+  display: flex;
+  margin-right: 0.5em;
+  width: 50%;
+}
+
+form .title {
+  margin-top: 2em;
+}
+
+.check-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 4.1rem;
+  margin-bottom: 1rem;
+  gap: 1em;
+  color: var(--font-color-base);
+}
+
+input, select {
+  margin: 0.5em;
+  margin-bottom: 1.5em;
+  border-radius: 0.5em;
+  border: none;
+  box-shadow: var(--shadow);
+  color: var(--font-color-base);
+}
+
+.check-box p {
+  display: inline;
+}
+
+.submit {
+  margin-top: 3em;
+}
+
+.footer {
+  justify-content: left;
+  align-items: flex-start;
+  gap: 4rem;
+  margin: 4rem;
+  color: var(--font-color-base);
+  font-size: small;
+}
+
+.footer-title {
+  font-weight: bolder;
+  font-size: large;
+  color: var(--black);
+}
+
+.footer > a:hover {
+  color: var(--font-color-link);
+}
+
+.footer-list, .footer-detail, .front-info {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-list a {
+  color: var(--font-color-base);
+}
+
+.footer-detail li {
+  max-width: 10em;
+  margin: 0.5em;
+}
+
+.footer-detail .button-blue {
+  border-radius: 0;
+  font-size: xx-small;
+  border-radius: 15%;
+  max-width: fit-content;
+  margin-left: 0.5em;
+  padding: 3px;
+  margin-right: 0;
+}
+
+.footer-bar {
+  justify-content: space-between;
+}
+
+.site-map ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.footer-bar li {
+  color: var(--font-color-base);
+}
+
+.socials img {
+  width: 2em;
+  margin: 0.5em;
+}
+
+.remarks {
+  text-align: center;
+  margin-top: 2rem;
+  margin-right: 10rem;
+  margin-left: 10rem;
+}
+
+#policy {
+  font-weight: bolder;
+  color: var(--font-color-base);
+}
+
+#first-name, 
+#last-name,
+#budget, 
+#country {
+  width: 15rem;
+  height: 3em;
+  font-size: large;
+}
+
+#comments {
+  display: flex;
+  width: 28em;
+  height: 15em;
+  font-size: large;
+}
+
+form h5 {
+  font-weight: bolder;
+  font-size: large;
+  margin-bottom: 1rem;
+}
+
+.hire-us h2, .hire-us h3 {
+  color: var(--white);
+  font-size: 2.5em;
+}
+
+.align h3, .hire-us h3 {
+  font-size: x-large;
+}
+
+.title h3, title h4 {
   margin: 0;
   padding: 0;
 }
 
 .title h4 {
-  margin: 0;
-  padding: 0;
   color: var(--font-color-base);
 }
 
+.pricing-heading h2{
+  font-weight: bold;
+}
+
+#pay-increment {
+  margin-top: 1em;
+}
+
+#row-two {
+  padding-bottom: 2.3em;
+}
 
 button.button-blue {
   background-color: var(--font-color-link);
   border: 1px solid var(--font-color-link);
+  justify-content: flex-start;
   color: var(--white);
   border-radius: 30px;
-  padding: 1rem;
-  font-size: larger;
+  padding: .5rem;
+  width: 10rem;
+  font-size: medium;
   box-shadow: var(--shadow);
 }
 
-h3 button {
+h3 button, h4 button {
   background-color: #00C8A7;
   font-size: large;
   font-weight: light;
@@ -279,8 +515,8 @@ h3 button {
   box-shadow: var(--shadow);
 }
 
-img.logo {
-  max-width: 10rem;
+img.logo, .footer-list img {
+  max-width: 7rem;
   margin-right: auto;
 }
 
