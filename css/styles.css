@@ -1,31 +1,24 @@
 header {
   overflow: hidden;
   position: relative;
-  background-color: var(--font-color-light);
-  z-index: -2;
+  background-image: linear-gradient(173deg, transparent 0%, transparent 70%, white 70% 67%, white), 
+  linear-gradient(118deg, transparent 0%, transparent 68%, #EDEFF8 68%, #edeff3 100%), 
+  linear-gradient(to top left, #edeff3, transparent 60%);
 }
 
-header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  transform: skewY(-17deg);
-  background-image: linear-gradient(#FFF, #F5f5f5);
-  transform-origin: bottom left;
-  z-index: -1;
-}
-
-.navbar-toggler {
-  display: none;
+.navbar-brand {
+  margin-top: 1em;
 }
 
 li.nav-link a {
   color: var(--font-color-base);
   font-size: large;
 }
+
+li.nav-link > button {
+  max-width: 7rem;
+}
+
 
 .navbar-nav {
   gap: 1rem;
@@ -41,15 +34,19 @@ li.nav-link a {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin: 1em;
 }
 
 .container.header {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  gap: 1em;
+  gap: 2em;
   width: 50%;
+  padding: 0;
+}
+
+.opening h2 {
+  max-width: 60%;
 }
 
 .intro > .opening {
@@ -97,8 +94,12 @@ li.nav-link a {
   margin-bottom: 5em;
 }
 
+.hire-us .title {
+  flex-direction: column;
+}
+
 .hero-boxes {
-  gap: 2em;
+  gap: 1em;
   width: 100%;
   height: 100%;
 }
@@ -110,7 +111,7 @@ li.nav-link a {
   align-items: first baseline;
   text-align: left;
   gap: 1em;
-  width: 30%;
+  width: 35%;
   height: fit-content;
   box-shadow: var(--shadow);
   padding: 1rem;
@@ -118,7 +119,17 @@ li.nav-link a {
 
 .container.showcase {
   background-color: var(--background-secondary);
-  padding-top: 10em;
+  padding-top: 8em;
+  gap: 2em;
+}
+
+.showcase-left {
+  margin-bottom: 3em;
+}
+
+.showcase h2 {
+  font-size: 2.3rem;
+  font-weight: 400;
 }
 
 .showcase img {
@@ -158,6 +169,7 @@ li.nav-link a {
 }
 
 .testimony {
+  flex-direction: row;
   gap: 2em;
   margin-bottom: 4em;
   width: 100%;
@@ -165,7 +177,7 @@ li.nav-link a {
 }
 
 .testimony .dots { 
-  margin-top: 10em;
+  margin-top: 8em;
   position: absolute;
   width: 20%;
   z-index: -1;
@@ -173,7 +185,7 @@ li.nav-link a {
 
 .testimony .profile-image {
   margin-left: 3em;
-  width: 90%;
+  width: 85%;
   z-index: 1;
 }
 
@@ -191,6 +203,7 @@ li.nav-link a {
   width: 50%;
   margin-right: auto;
   margin-bottom: 2rem;
+  margin-top: 5rem;
 }
 
 .testimony .details {
@@ -216,7 +229,7 @@ li.nav-link a {
 }
 
 .logos > div {
-  max-width: 15%;
+  max-width: 100%;
 }
 
 .pricing {
@@ -231,6 +244,10 @@ li.nav-link a {
 }
 
 .pricing-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 3em;
 }
 
@@ -285,6 +302,8 @@ li.nav-link a {
 }
 
 .hire-us {
+  justify-content: flex-start;
+  align-items: center;
   gap: 4em;
   color: var(--white);
   font-size: medium;
@@ -310,6 +329,14 @@ li.nav-link a {
   font-size: large;
 }
 
+.hire-left, .hire-right {
+  flex-direction: column;
+}
+
+.hire-left > .horizontal-rule {
+  width: 20em;
+}
+
 .quote {
   margin-bottom: 3em;
 }
@@ -325,17 +352,23 @@ li.nav-link a {
 
 .head-shot {
   border-radius: 3rem;
-  max-width: 4rem;
+  max-width: 3rem;
 }
 
 .contact-form {
   display: flex;
-  margin-right: 0.5em;
   width: 50%;
 }
 
+form > .flex { gap: 0;}
+
+form {
+  margin: 1em;
+}
+
 form .title {
-  margin-top: 2em;
+  margin-top: 2rem;
+  margin-left: 1em;
 }
 
 .check-box {
@@ -348,10 +381,12 @@ form .title {
   color: var(--font-color-base);
 }
 
+form > .policy { gap: 2em;}
+
 input, select {
   margin: 0.5em;
   margin-bottom: 1.5em;
-  border-radius: 0.5em;
+  border-radius: 0.265em;
   border: none;
   box-shadow: var(--shadow);
   color: var(--font-color-base);
@@ -363,6 +398,12 @@ input, select {
 
 .submit {
   margin-top: 3em;
+}
+
+.submit button {
+  padding: 2em;
+  max-width: 8em;
+  margin-bottom: 2em;
 }
 
 .footer {
@@ -455,6 +496,10 @@ input, select {
   font-size: large;
 }
 
+.box-title h4 {
+  color: var(--black);
+}
+
 form h5 {
   font-weight: bolder;
   font-size: large;
@@ -509,14 +554,14 @@ h3 button, h4 button {
   font-weight: light;
   border: none;
   padding: 8px;
-  margin-left: 1em;
+  margin-left: 0.1em;
   border-radius: 0.5em;
   color: var(--white);
   box-shadow: var(--shadow);
 }
 
 img.logo, .footer-list img {
-  max-width: 7rem;
+  max-width: 8rem;
   margin-right: auto;
 }
 
@@ -544,3 +589,14 @@ img.logo, .footer-list img {
   max-height: 5em;
 }
 
+li > a:hover {
+  color: var(--font-color-link);
+}
+
+* a:hover {
+  color: var(--font-color-link);
+}
+
+.head-shot:hover {
+  max-width: 4.5rem;
+}

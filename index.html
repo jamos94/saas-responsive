@@ -18,12 +18,14 @@
   <header>
     <nav class="navbar nav">
       <div class="container">
-        <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
-          <span>&#9776;</span>
-        </button>
+        <div class="brand-menu">
           <a href="index.html" class="navbar-brand">
             <img src="assets/project_logo/logo.svg" class="logo" alt="Front Logo">
           </a>
+          <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+            <span>&#9776;</span>
+          </button>
+        </div>
         <ul class="navbar-nav flex">
           <li class="nav-link"><a href="#">Home</a></li>
           <li class="nav-link"><a href="#">Features</a></li>
@@ -51,32 +53,33 @@
             <a href="#">Learn More</a>
           </div>
         </div>
-        <div class="floaters flex">
-          <div class="row">
-            <div class="logo-icon flex small">
-              <img src="assets/logo_icons/google.png" class="google" alt="Google icon logo">
+          <div class="floaters flex">
+            <div class="row">
+              <div class="logo-icon flex small">
+                <img src="assets/logo_icons/google.png" class="google" alt="Google icon logo">
+              </div>
+              <div class="logo-icon flex atlassian">
+                <img src="assets/logo_icons/atlassian.png" alt="Atlassian icon logo">
+              </div>
             </div>
-            <div class="logo-icon flex atlassian">
-              <img src="assets/logo_icons/atlassian.png" alt="Atlassian icon logo">
-            </div>
-          </div>
-          <div class="row">
-            <div class="logo-icon flex paypal">
-              <img src="assets/logo_icons/paypal.jpg" alt="Paypal icon logo">
-            </div>
-            <div class="logo-icon flex small">
-              <img src="assets/logo_icons/weave.png" alt="Google icon logo">
-            </div>
-            <div class="logo-icon flex asana">
-              <img src="assets/logo_icons/asana.png" alt="Asana icon logo">
-            </div>
-          </div class="row">
-          <div class="row">
-            <div class="logo-icon flex small">
-              <img src="assets/logo_icons/google-A.png" alt="Google icon logo">
-            </div>
-            <div class="logo-icon flex calender">
-              <img src="assets/logo_icons/calendar.png" alt="Google icon logo">
+            <div class="row">
+              <div class="logo-icon flex paypal">
+                <img src="assets/logo_icons/paypal.jpg" alt="Paypal icon logo">
+              </div>
+              <div class="logo-icon flex small">
+                <img src="assets/logo_icons/weave.png" alt="Google icon logo">
+              </div>
+              <div class="logo-icon flex asana">
+                <img src="assets/logo_icons/asana.png" alt="Asana icon logo">
+              </div>
+            </div class="row">
+            <div class="row">
+              <div class="logo-icon flex small">
+                <img src="assets/logo_icons/google-A.png" alt="Google icon logo">
+              </div>
+              <div class="logo-icon flex calender">
+                <img src="assets/logo_icons/calendar.png" alt="Google icon logo">
+              </div>
             </div>
           </div>
         </div>
@@ -183,7 +186,7 @@
         <img src="/assets/banners/banner_two.jpg" alt="Show case video">
       </div>
       <div class="container testimony flex">
-          <div>
+          <div class="testimony-img">
             <img src="assets/abstract/dots.svg" class="dots" alt="Background dots">
             <img src="/assets/people/woman_three.jpg" class="profile-image" alt="Head shot of executive director">
           </div>
@@ -227,7 +230,7 @@
             <div class="title">
               <span class="price">59</span><span id="pay-increment">/ mo</span>
             </div>
-            <div><hr></div>
+            <div class="horzontal-rule"><hr></div>
             <div class="description">
                 <span>
                   Start your Front business now. 100% guaranteed money back.
@@ -242,6 +245,7 @@
               <div class="mini-tag"><span>No credit card required.</span></div>
             </div>
           </div>
+          <div class="pricing-boxes bottom">
           <div class="align flex">
             <div class="box">
               <div class="icon">
@@ -287,29 +291,34 @@
           </div>
         </div>
       </div>
+      </div>
       <div class="hire-us flex">
         <div class="hire-intro">
-          <div>
-            <h3>Hire Us</h3>
-            <div class="mini-tag">
-              Whatever your goal - <br>we will get you there
+          <div class="hire-left flex">
+            <div class="title">
+              <h3>Hire Us</h3>
+              <div class="mini-tag">
+                Whatever your goal - we will get you there
+              </div>
+            </div>
+            <div class="horizontal-rule"><hr></div>
+            <div class="quote">
+            <em> "I love front! I love the ease of use, I love the fact that I
+              have total creative freedom..."</em>
             </div>
           </div>
-          <div><hr></div>
-          <div class="quote">
-           <em> "I love front! I love the ease of use, I love the fact that I
-            have total creative freedom..."</em>
-          </div>
-          <div class="reviewer">
-            <h3>Charlotte Moore</h3>
-            <div class="reviewer-title">
-              Head of Commerce, Slack
+          <div class="hire-right flex">
+            <div class="reviewer">
+              <h3>Charlotte Moore</h3>
+              <div class="reviewer-title">
+                Head of Commerce, Slack
+              </div>
             </div>
-          </div>
-          <div class="team">
-            <img src="assets/people/woman_one.jpg" class="head-shot" alt="Employee head shot">
-            <img src="assets/people/woman_two.jpg" class="head-shot" alt="Employee head shot">
-            <img src="assets/people/man_one.jpg" class="head-shot" alt="Employee head shot">
+            <div class="team">
+              <img src="assets/people/woman_one.jpg" class="head-shot" alt="Employee head shot">
+              <img src="assets/people/woman_two.jpg" class="head-shot" alt="Employee head shot">
+              <img src="assets/people/man_one.jpg" class="head-shot" alt="Employee head shot">
+            </div>
           </div>
         </div>
         <div class="contact-form">
@@ -317,23 +326,23 @@
             <div class="title">
               <h5>Fill out the form and we'll be back in touch as soon as possible</h5>
             </div>
-            <div class="name">
+            <div class="name flex">
               <label for="first-name"></label>
               <input type="text" id="first-name" name="first-name" placeholder="First name">
               <label for="last-name"></label>
               <input type="text" id="last-name" name="last-name" placeholder="Last name">
             </div>
-            <div class="more-info">
+            <div class="more-info flex">
               <label for="budget"></label>
               <select class="form-select" id="budget" name="budget">
                 <option>Budget</option>
               </select>
-              <label for="country"></label>
+              <label for="country flex"></label>
               <select class="form-select" id="country" name="country">
                 <option>Select country</option>
               </select>
             </div>
-            <div class="comments">
+            <div class="comments flex">
               <label for="comments"></label>
               <input type="textarea" name="comments" id="comments" placeholder="Tell us more about your project, needs, and timeline, please...">
             </div>
@@ -361,7 +370,7 @@
     </main>
     <footer>
       <div class="footer footer-top flex">
-        <div class="footer-list flex">
+        <div class="footer-list footer-logo flex">
           <div class="footer-title">
             <img src="assets/project_logo/logo.svg" alt="">
           </div>
@@ -372,56 +381,58 @@
             </ul>
           </div>
         </div>
-        <div class="footer-list flex">
-          <div class="footer-title">
-            <h5>Company</h5>
+        <div class="footer-menu flex">
+          <div class="footer-list flex">
+            <div class="footer-title">
+              <h5>Company</h5>
+            </div>
+            <div class="footer-detail flex">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Career <button class="button-blue">We're Hiring</button></a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="footer-detail flex">
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Career <button class="button-blue">We're Hiring</button></a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Customers</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
+          <div class="footer-list flex">
+            <div class="footer-title">
+              <h5>Features</h5>
+            </div>
+            <div class="footer-detail">
+              <ul>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Release notes</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="footer-list flex">
-          <div class="footer-title">
-            <h5>Features</h5>
-          </div>
-          <div class="footer-detail">
-            <ul>
-              <li><a href="#">Press</a></li>
-              <li><a href="#">Release notes</a></li>
-              <li><a href="#">Integrations</a></li>
-              <li><a href="#">Pricing</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-list flex">
-          <div class="footer-title">
-            <h5>Documentation</h5>
-          </div>
-          <div class="footer-detail">
-            <ul>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Docs</a></li>
-              <li><a href="#">Status</a></li>
-              <li><a href="#">API Reference</a></li>
-              <li><a href="#">Tech Requirements</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-list flex">
-          <div class="footer-title">
-            <h5>Resources</h5>
-          </div>
-          <div class="footer-detail">
-            <ul>
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Your Account</a></li>
-            </ul>
+          <div class="footer-list flex">
+            <div class="footer-title">
+              <h5>Documentation</h5>
+            </div>
+            <div class="footer-detail">
+              <ul>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Status</a></li>
+                <li><a href="#">API Reference</a></li>
+                <li><a href="#">Tech Requirements</a></li>
+              </ul>
+            </div>
+            </div>
+          <div class="footer-list flex">
+            <div class="footer-title">
+              <h5>Resources</h5>
+            </div>
+            <div class="footer-detail">
+              <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Your Account</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -438,25 +449,29 @@
             </ul>
           </div>
           <div class="socials flex">
-            <img 
-              src="https://img.icons8.com/ios-filled/50/facebook--v1.png" 
-              alt="facebook--v1"
-            />
-            <img 
-              src="https://img.icons8.com/ios-filled/50/google-logo.png" 
-              alt="google-logo"
-            />
-            <img 
-              src="https://img.icons8.com/ios-filled/50/twitter.png" 
-              alt="twitter"
-            />
-            <img 
-              src="https://img.icons8.com/ios-filled/50/github.png" 
-              alt="github"
-            />
-            <select class="country" id="country" name="country">
-              <option>United States</option>
-            </select>
+            <div>
+              <img 
+                src="https://img.icons8.com/ios-filled/50/facebook--v1.png" 
+                alt="facebook--v1"
+              />
+              <img 
+                src="https://img.icons8.com/ios-filled/50/google-logo.png" 
+                alt="google-logo"
+              />
+              <img 
+                src="https://img.icons8.com/ios-filled/50/twitter.png" 
+                alt="twitter"
+              />
+              <img 
+                src="https://img.icons8.com/ios-filled/50/github.png" 
+                alt="github"
+              />
+            </div>
+            <div class="country">
+              <select class="country" id="country" name="country">
+                <option>United States</option>
+              </select>
+            </div>
           </div>
         </div>
         <div class="remarks">
@@ -472,5 +487,15 @@
         </div>
       </div>
     </footer>
+    <script>
+      const navButton = document.querySelector('button[aria-expanded]');
+      
+      function toggleNav({target}) {
+        const expanded = target.getAttribute('aria-expanded') === 'true' || 'false';
+        navButton.setAttribute('aria-expanded', !expanded);
+      }
+
+      navButton.addEventListener('click', toggleNav);
+    </script>
   </body>
 </html>

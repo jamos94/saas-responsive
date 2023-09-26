@@ -45,13 +45,20 @@ form {
   box-sizing: border-box;
 }
 
+.navbar-toggler {
+  display: none;
+}
+
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-a { text-decoration: none; }
+a { 
+  text-decoration: none;
+  color: var(--font-color-dark);
+ }
 
 a:active {
   color: var(--font-color-base);
