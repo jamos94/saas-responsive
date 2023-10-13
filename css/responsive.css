@@ -1,6 +1,6 @@
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
-  [aria-controls="NavbarDropDown"] {
+  [aria-controls="navbarDropdown"] {
     display: block;
   }
 
@@ -24,9 +24,13 @@
     overflow-x: hidden;
   }
 
+  .container.nav-container {
+    flex-flow: row-reverse;
+  }
+
   .container {
     flex-direction: column;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   .navbar-nav {
@@ -34,10 +38,10 @@
   }
 
   .navbar-toggler {
-    display: flex;
     border: none;
     background-color: transparent;
     pointer-events: none;
+    margin-left: auto;
   }
 
   .navbar-toggler > span {

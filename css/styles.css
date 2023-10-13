@@ -6,8 +6,29 @@ header {
   linear-gradient(to top left, #edeff3, transparent 60%);
 }
 
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 500;
+  transition: ease-in-out 0.3s;
+  margin-top: 0.5em;
+}
+
+[aria-controls="navbarDropdown"] {
+  display: none;
+}
+
+.navbar.container {
+  margin-bottom: 0;
+  padding: 1em;
+}
+
 .navbar-brand {
-  margin-top: 1em;
+  margin-right: auto;
+  transition: ease-in-out 0.3s;
 }
 
 li.nav-link a {
@@ -23,7 +44,6 @@ li.nav-link > button {
 .navbar-nav {
   gap: 1rem;
   margin-left: auto;
-  padding-top: 1em;
 }
 
 .more-details > .button-blue {
@@ -34,6 +54,7 @@ li.nav-link > button {
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin-top: 6rem;
 }
 
 .container.header {
@@ -551,7 +572,7 @@ button.button-blue {
 h3 button, h4 button {
   background-color: #00C8A7;
   font-size: large;
-  font-weight: light;
+  font-weight: 200;
   border: none;
   padding: 8px;
   margin-left: 0.1em;

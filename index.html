@@ -16,16 +16,14 @@
 </head>
 <body>
   <header>
-    <nav class="navbar nav">
-      <div class="container">
-        <div class="brand-menu">
-          <a href="index.html" class="navbar-brand">
-            <img src="assets/project_logo/logo.svg" class="logo" alt="Front Logo">
-          </a>
-          <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
-            <span>&#9776;</span>
-          </button>
-        </div>
+    <nav class="navbar nav flex">
+      <div class="container nav-container">
+        <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+          <span>&#9776;</span>
+        </button>
+        <a href="index.html" class="navbar-brand">
+          <img src="assets/project_logo/logo.svg" class="logo" alt="Front Logo">
+        </a>
         <ul class="navbar-nav flex">
           <li class="nav-link"><a href="#">Home</a></li>
           <li class="nav-link"><a href="#">Features</a></li>
@@ -69,10 +67,10 @@
               <div class="logo-icon flex small">
                 <img src="assets/logo_icons/weave.png" alt="Google icon logo">
               </div>
-              <div class="logo-icon flex asana">
+              <div class="logo-icon flex">
                 <img src="assets/logo_icons/asana.png" alt="Asana icon logo">
               </div>
-            </div class="row">
+            </div>
             <div class="row">
               <div class="logo-icon flex small">
                 <img src="assets/logo_icons/google-A.png" alt="Google icon logo">
@@ -80,7 +78,6 @@
               <div class="logo-icon flex calender">
                 <img src="assets/logo_icons/calendar.png" alt="Google icon logo">
               </div>
-            </div>
           </div>
         </div>
       </div>
@@ -337,14 +334,14 @@
               <select class="form-select" id="budget" name="budget">
                 <option>Budget</option>
               </select>
-              <label for="country flex"></label>
-              <select class="form-select" id="country" name="country">
+              <label for="country"></label>
+              <select class="form-select" id="locality" name="country">
                 <option>Select country</option>
               </select>
             </div>
             <div class="comments flex">
               <label for="comments"></label>
-              <input type="textarea" name="comments" id="comments" placeholder="Tell us more about your project, needs, and timeline, please...">
+              <textarea name="comments" id="comments" placeholder="Tell us more about your project, needs, and timeline, please..."></textarea>
             </div>
             <div class="check-box">
               <div>
@@ -352,15 +349,14 @@
               </div>
               <div>
                 <label for="checkbox">
-                  <p>
+                  <span>
                     Yes, I'd like to recieve occassional marketing emails
                     from Front. I have the right to opt out at any time.
-                  </p>
+                  </span>
                 </label>
               </div>
             </div>
             <div class="policy flex">
-              <a href="#" id="policy">View privacy policy</a>
               <a href="#" id="policy">View privacy policy</a>
             </div>
             <div class="submit"><button class="button-blue">Get Started</button></div>
@@ -389,7 +385,7 @@
             <div class="footer-detail flex">
               <ul>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Career <button class="button-blue">We're Hiring</button></a></li>
+                <li><a href="#">Career</a><button class="button-blue">We're Hiring</button></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Customers</a></li>
                 <li><a href="#">Contact Us</a></li>
@@ -452,22 +448,18 @@
             <div>
               <img 
                 src="https://img.icons8.com/ios-filled/50/facebook--v1.png" 
-                alt="facebook--v1"
-              />
+                alt="facebook--v1">
               <img 
                 src="https://img.icons8.com/ios-filled/50/google-logo.png" 
-                alt="google-logo"
-              />
+                alt="google-logo">
               <img 
                 src="https://img.icons8.com/ios-filled/50/twitter.png" 
-                alt="twitter"
-              />
+                alt="twitter">
               <img 
                 src="https://img.icons8.com/ios-filled/50/github.png" 
-                alt="github"
-              />
+                alt="github">
             </div>
-            <div class="country">
+            <div class="locality">
               <select class="country" id="country" name="country">
                 <option>United States</option>
               </select>
