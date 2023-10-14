@@ -413,8 +413,9 @@ input, select {
   color: var(--font-color-base);
 }
 
-.check-box p {
+.check-box span {
   display: inline;
+  font-size: small;
 }
 
 .submit {
@@ -620,4 +621,8 @@ li > a:hover {
 
 .head-shot:hover {
   max-width: 4.5rem;
+}
+
+.box:hover {
+  padding: 1.5em;
 }

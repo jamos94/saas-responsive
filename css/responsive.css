@@ -453,6 +453,11 @@
     padding: 1em;
   }
 
+  .name, 
+  .more-info {
+    flex-direction: column;
+  }
+
   .check-box {
     margin: 0;
     gap: 0.5em;
@@ -472,10 +477,6 @@
   #comments {
     width: 17em;
     height: 10em;
-  }
-
-  #policy:nth-child(odd) {
-    display: none;
   }
 
   h3 {
