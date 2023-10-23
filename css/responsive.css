@@ -173,11 +173,13 @@
     flex-direction: column;
   }
 
+
   .hire-intro {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 90%;
-    gap: 5rem;
     margin-left: 0;
 }
 
@@ -185,7 +187,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 60%;
+  width: 40%;
 }
 
   .pricing-boxes {
@@ -194,11 +196,11 @@
   }
 
   .title {
-    align-items: flex-start;
+    align-items: center;
   }
 
   .hire-left > .horizontal-rule {
-    width: 26em;
+    width: 18em;
   }
 
   .hire-right {
@@ -219,6 +221,11 @@
   }
 
   .contact-form {
+    justify-content: center;
+    width: 100%;
+  }
+
+  form {
     width: 100%;
   }
 
@@ -271,14 +278,16 @@
   }
   
   #first-name, 
-  #last-name,
-  #budget, 
-  #country {
-    width: 20rem;
+  #last-name, 
+  #first-name-2, 
+  #last-name-2,
+  #budget.form-select, 
+  #locality {
+    width: 15rem;
   }
   
   #comments {
-    width: 37em;
+    width: 32em;
     height: 10em;
   }
 
@@ -420,12 +429,6 @@
     width: 100%;
   }
 
-  .hire-intro {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .hire-left {
     width: 100%;
   }
@@ -468,9 +471,11 @@
   }
 
   #first-name, 
-  #last-name,
-  #budget, 
-  #country {
+  #last-name, 
+  #first-name-2, 
+  #last-name-2,
+  #budget.form-select, 
+  #locality {
     width: 17rem;
   }
 
